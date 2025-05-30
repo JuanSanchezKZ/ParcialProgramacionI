@@ -10,13 +10,15 @@ print("##### 3) CALCULAR EL MEJOR PROMEDIO DE TODOS LOS ALUMNOS #####")
 print("##### 4) BUSCAR UNA NOTA EN LA TABLA DE ALUMNOS Y EXAMENES #####") # Menu descriptivo
 flag = True # bandera para cortar el while
 while flag:
-    opcion = int(input("Por favor elija una opción:")) # input de usuario para elegir opcion
-
-    if opcion >= 1 and opcion <= 4: # si la opcion esta entre los numeros validos cortamos el while
-        flag = False
+    opcion = input("Por favor elija una opción:") # input de usuario para elegir opcion
+    if opcion.isdigit():
+        opcion = int(opcion) # convierto a int si es un digito el input
+        if opcion >= 1 and opcion <= 4: # si la opcion esta entre los numeros validos cortamos el while
+            flag = False
+        else:
+            print("Por favor ingrese una opción válida del 1 al 4.") # si no le pedimos que ingrese de vuelta un numero valido   
     else:
-        print("Por favor ingrese una opción válida del 1 al 4.") # si no le pedimos que ingrese de vuelta un numero valido   
-
+        print("Por favor ingrese un número")
 if opcion == 1: #elif de selccion de funcion dependiendo de la opcion
     cargar_matriz_notas()
 elif opcion == 2:
