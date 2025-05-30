@@ -12,7 +12,6 @@ def mejor_promedio():
 
     alumnosMatriz = cargar_matriz_notas() # cargo la matriz
     
-    
     promedios = [] # Inicializo array de promedios
     for alumnos in alumnosMatriz: # primera iteracion sobre matriz
         totalNotas = 0 # variable de acumulador de notas

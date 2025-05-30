@@ -4,6 +4,7 @@ from cargar_matriz_notas import cargar_matriz_notas
 def buscar_nota():
 
     flag = True # bandera para cortar el while
+    
     while flag:
         notaABuscar = input("Por favor ingrese una nota del 1 al 10:") # pido al usuario una nota
 
