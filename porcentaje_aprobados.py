@@ -2,9 +2,9 @@ from cargar_matriz_notas import cargar_matriz_notas
 
 
 
-alumnosMatriz = cargar_matriz_notas()
-
 def porcentaje_aprobados():
+    
+    alumnosMatriz = cargar_matriz_notas()
     indice = 0
     for notas_alumnos in alumnosMatriz:
         indice = indice + 1 # Creo una variable indice para poder mostrar en que alumno estamos parados mas claramente
@@ -23,16 +23,3 @@ def porcentaje_aprobados():
          # printeo el informe
         print(f"El alumno {indice} tiene un promedio de {promedio}. ") 
         print (f"El alumno {indice} tiene un porcentaje de {porcentajeAprobadas}% examenes aprobados.")
-
-
-        
-
-
-            
-        
-   
-       
-
-
-
-porcentaje_aprobados()
